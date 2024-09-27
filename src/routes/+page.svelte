@@ -6,7 +6,7 @@
 	let { dramaData, movieData, seriesData } = data;
 </script>
 
-<div id="wrapper" class="w-full px-[7%] mt-[5%]">
+<div id="wrapper" class="w-full px-[5%] mt-[5%] sm:px-[4%]">
 	<SearchBar />
 	<MainSection sectionData={dramaData} sectionType="Drama" />
 	<MainSection sectionData={movieData} sectionType="Movie" />

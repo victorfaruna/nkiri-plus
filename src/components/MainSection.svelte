@@ -15,7 +15,7 @@
 
 <style>
 	.inner {
-		grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
 	}
 
 	@media (max-width: 500px) {
