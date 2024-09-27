@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root body {
+	--font-family-1: 'Poppins', system-ui;
+	color: rgb(var(--color-1));
+	background-color: rgb(var(--bg-color-1));
+	font-family: var(--font-family-1);
+	font-size: 0.8rem;
+	font-weight: 400;
+}
+
+:root[data-theme='light'] {
+	/* --bg-color-1: 9, 9, 14; */
+	--bg-color-1: 255, 255, 255;
+	--bg-color-2: 215, 215, 215;
+	--bg-color-3: 160, 160, 160;
+	--color-1: 30, 30, 30;
+	--color-2: 20, 20, 20;
+	--color-3: 110, 193, 228;
+	--font-family-1: 'Poppins', system-ui;
+}
+:root[data-theme='dark'] {
+	/* --bg-color-1: 9, 9, 14; */
+	--bg-color-1: 40, 40, 40;
+	--bg-color-2: 215, 215, 215;
+	--bg-color-3: 160, 160, 160;
+	--color-1: 210, 210, 210;
+	--color-2: 20, 20, 20;
+	--color-3: 110, 193, 228;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a:hover {
+	color: rgba(var(--color-3));
+}
+
+.center-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	width: 0;
+}
+
+.swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {
+	width: 98% !important;
+	left: 1% !important;
+	bottom: 0 !important;
+	top: unset !important;
+	border-radius: 20px !important;
+	overflow: hidden !important;
+	background-color: rgba(var(--bg-color-3)) !important;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+	background-color: rgba(var(--color-3), 0.8) !important;
+	border-radius: 20px !important;
+	overflow: hidden !important;
+}
+
+.glassmorphism {
+	backdrop-filter: blur(10px);
+	border: 0.5px solid rgba(var(--color-1), 0.3);
+}
